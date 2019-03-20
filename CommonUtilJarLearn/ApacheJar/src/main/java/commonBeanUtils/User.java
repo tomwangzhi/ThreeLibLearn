@@ -10,6 +10,18 @@ public class User {
     private String email;
     private String birthday;
 
+    public User() {
+    }
+
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
+    }
+
+    public User(String name) {
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -40,5 +52,15 @@ public class User {
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", birthday='" + birthday + '\'' +
+                '}';
     }
 }
