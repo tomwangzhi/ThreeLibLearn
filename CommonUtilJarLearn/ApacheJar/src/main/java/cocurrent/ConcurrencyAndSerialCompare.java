@@ -1,6 +1,9 @@
 package cocurrent;
 
 /**
+ * 问题：并发一定更快吗？ 答案：不一定，线程创建以及上下文切换需要耗时间。
+ *
+ * 线程上下文切换：
  * 1.一个方法并发执行  2. 一个是串行执行   结论：并不是并发执行就一定更快，当element足够大时才会运行更快
  */
 public class ConcurrencyAndSerialCompare {
